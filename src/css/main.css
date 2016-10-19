@@ -1,0 +1,11 @@
+/* add custom styles */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+.nav-wrapper {
+  padding: 0px 10px 0px 10px;
+}
+.title {
+  text-align: center;
+  font-size: 40px;
+}

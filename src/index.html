@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="movie-search">
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body ng-cloak>
+    <!-- sample angular code -->
+    <div class="main container">
+      <h1 class="title">Angular OMDb API Search</h1>
+        <div class="row">
+          <div class="input-field col m4 offset-m4" ng-controller="mainController as main">
+            <input type="text" ng-model="search.text" name="name" placeholder="Enter Search Query">
+            <a class="submitBtn wave effect waves-light btn col m4 offset-m4" ng-click="main.search(search.text)">Submit</a>
+            <span>{{main.movieObj.Search[0].Title}}</span>
+          </div>
+        </div>
+        <br>
+        <hr>
+      <div ng-view></div>
+      </div>
+
+    </div>
+    <!-- scripts -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <!-- main component -->
+    <script type="text/javascript" src="js/components/main/main.controller.js"></script>
+    <script type="text/javascript" src="js/services/services.api.js"></script>
+  </body>
+</html>
