@@ -1,5 +1,19 @@
 <div class="row">
-  <div class="">
-    <h1>THIS IS SHOW PAGE</h1>
+  <div class="col m8 offset-m2 card-panel teal white-text">
+    <h1 class="movieTitle">{{showCtrl.movie().Title}}</h1>
+    <div class="moviePoster col m6">
+      <img ng-src="{{showCtrl.movie().Poster}}" alt="poster"/>
+    </div>
+    <div class="movieInfo col m6">
+      <h4>Directed By: </h4>
+      <p>{{showCtrl.movie().Director}}</p>
+      <h4>Year Produced: <span>{{showCtrl.movie().Year}}</span></h4>
+      <h4>Cast: </h4>
+      <p>{{showCtrl.movie().Actors}}</p>
+      <h4>Awards: </h4>
+      <p>{{showCtrl.movie().Awards}}</p>
+      <h4>Genre: </h4>
+      <p>{{showCtrl.movie().Genre}}</p>
+    </div>
   </div>
 </div>

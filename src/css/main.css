@@ -9,3 +9,27 @@
   text-align: center;
   font-size: 40px;
 }
+.movieDiv {
+  height: 200px;
+  padding: 20px 50px 20px 50px !important;
+}
+.movieDiv h2{
+  font-size: 30px;
+}
+.movieDiv h4{
+  font-size: 15px;
+}
+.moviePoster img {
+  width: 100%
+}
+.movieTitle {
+  font-size: 40px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+.movieInfo {
+  font-size: 20px;
+}
+.movieInfo h4 {
+  font-size: 25px;
+}

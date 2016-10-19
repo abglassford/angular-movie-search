@@ -1,6 +1,6 @@
-<div class="">
-  <div class="">
-    {{mainCtrl.movieObj.Search[0].Title}}
-  </div>  
-  {{mainCtrl.test}}
+<div class="row">
+  <a class="movieDiv col m6 card-panel teal white-text" ng-repeat="movie in moviesCtrl.movieObj().data.Search" ng-click="moviesCtrl.select(movie.Title)" href="/#/{{movie.Title}}">
+    <h2>{{movie.Title}}</h2>
+    <h4>{{movie.Year}}</h4>
+  </a>
 </div>

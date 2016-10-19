@@ -6,18 +6,18 @@
     .module('movie-search.components.main', ['api'])
     .controller('mainController', mainController);
 
-  mainController.$inject = ['$scope', 'accessApi'];
+  mainController.$inject = ['$scope', 'accessApi', '$location'];
 
-  function mainController($scope, accessApi) {
-    this.test = "this is a test"
-    this.movieObj = {}
+  function mainController($scope, accessApi, $location) {
     this.search = (text) => {
       accessApi.callApi(text)
-      .then((data) => {
-        this.movieObj = data
-        console.log(data);
+      .then(() => {
+        this.query = null
+        $location.path('/')
       })
+      .catch((err) => {throw err;})
     }
+
   }
 
 })();

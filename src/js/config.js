@@ -10,8 +10,8 @@
     $routeProvider
       .when('/', {
         templateUrl: 'js/components/main/main.home.html',
-        controller: 'mainController',
-        controllerAs: 'mainCtrl'
+        controller: 'moviesController',
+        controllerAs: 'moviesCtrl'
       })
       .when('/:movie', {
         templateUrl: 'js/components/main/main.show.html',

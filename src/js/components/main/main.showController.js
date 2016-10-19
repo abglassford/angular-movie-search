@@ -9,9 +9,7 @@
   showController.$inject = ['$scope', 'accessApi'];
 
   function showController($scope, accessApi) {
-    this.hello = () => {
-      console.log('hello');
-    }
+    this.movie = () => accessApi.movie
   }
 
 })();
