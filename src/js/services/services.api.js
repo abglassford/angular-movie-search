@@ -10,7 +10,7 @@
     function AccessApi ($http) {
       this.movie = {}
       this.callApi = (query) => {
-      return $http.get(`http://www.omdbapi.com/?s=${query}`)
+      return $http.get(`https://www.omdbapi.com/?s=${query}`)
         .then((movieData) => {
           this.movie = movieData
         })
@@ -19,7 +19,7 @@
         })
       }
       this.getMovieData = (movie) => {
-        return $http.get(`http://www.omdbapi.com/?t=${movie}&y=&plot=short&r=json`)
+        return $http.get(`https://www.omdbapi.com/?t=${movie}&y=&plot=short&r=json`)
         .then((movieData) => {
           this.movie = movieData.data
           console.log(this.movie);
