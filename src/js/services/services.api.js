@@ -22,7 +22,6 @@
         return $http.get(`https://www.omdbapi.com/?t=${movie}&y=&plot=short&r=json`)
         .then((movieData) => {
           this.movie = movieData.data
-          console.log(this.movie);
         })
         .catch((err) => {
           throw err;

@@ -12,7 +12,6 @@
     this.movieObj = () => accessApi.movie
     this.select = (movie) => {
       accessApi.getMovieData(movie)
-      .then(() => console.log('success'))
     }
   }
 
